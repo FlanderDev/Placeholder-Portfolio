@@ -7,8 +7,8 @@
 <style>
     body {
         font-family: system-ui, sans-serif;
-        background: linear-gradient(135deg, #f9f9f9, #ececec);
-        color: #333;
+        background: linear-gradient(135deg, #0d1117, #161b22);
+        color: #e6edf3;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -17,10 +17,10 @@
     }
     .container {
         text-align: center;
-        background: white;
+        background: #1c2128;
         padding: 2rem 3rem;
         border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
         max-width: 420px;
         animation: fadeIn 1.2s ease forwards;
     }
@@ -36,16 +36,18 @@
     }
     p {
         font-size: 1rem;
-        color: #666;
+        color: #8b949e;
         opacity: 0;
         animation: fadeIn 1s ease 0.8s forwards;
     }
     a {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
         margin-top: 1.2rem;
         text-decoration: none;
         color: #fff;
-        background: #333;
+        background: #238636; /* GitHub green button color */
         padding: 0.6rem 1.2rem;
         border-radius: 6px;
         font-size: 0.95rem;
@@ -54,27 +56,33 @@
         animation: fadeIn 1s ease 1.4s forwards;
     }
     a:hover {
-        background: #555;
+        background: #2ea043;
+    }
+    a img {
+        height: 18px;
+        width: 18px;
+        filter: brightness(0) invert(1); /* Makes the logo white */
     }
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
     }
     @keyframes pulse {
-        0%, 100% { transform: scale(1); color: #333; }
-        50% { transform: scale(1.05); color: #d35400; }
+        0%, 100% { transform: scale(1); color: #e6edf3; }
+        50% { transform: scale(1.05); color: #f0883e; }
     }
 </style>
 </head>
 <body>
     <div class="container">
         <h1>Felix Leander</h1>
+<img width="90%" height="90%" src="https://github.com/user-attachments/assets/e045f578-35b8-4694-8f95-e9e79ccc9e85" alt="GitHub-profile Logo">
         <h2>🚧 Work in Progress</h2>
         <p>This is my portfolio site.<br>
         It’s currently under construction — check back soon!</p>
-        <p>Feel free to checkout my GitHub in the meantime</p>
-	<a href="https://github.com/FelixLeander" target="_blank">
-	<img width="50%" height="50%" alt="GitHub profile logo" src="https://avatars.githubusercontent.com/u/55660647" >
+        <a href="https://github.com/YourUsername" target="_blank">
+            <img src="https://github.com/user-attachments/assets/e045f578-35b8-4694-8f95-e9e79ccc9e85" alt="GitHub-profile Logo">
+            Visit my GitHub
         </a>
     </div>
 </body>
